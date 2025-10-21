@@ -1,0 +1,13 @@
+.main-content {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+
+  &.expanded {
+    margin-left: 80px;
+  }
+
+  .content {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+}

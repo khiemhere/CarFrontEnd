@@ -21,6 +21,9 @@
     "@coreui/angular": "^5.5.17",
     "@coreui/coreui": "^5.4.3",
     "@coreui/icons-angular": "^5.5.17",
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.1"

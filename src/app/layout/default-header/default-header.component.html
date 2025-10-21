@@ -1,0 +1,72 @@
+<header class="header d-flex justify-content-between align-items-center px-3 border-bottom bg-white shadow-sm">
+  <div class="d-flex align-items-center gap-3">
+    <button class="btn btn-link text-dark fs-4" (click)="onToggleSidebar()">
+      <i class="bi bi-list"></i>
+    </button>
+    <nav class="nav">
+      <a class="nav-link text-dark fw-semibold" routerLink="/dashboard">Dashboard</a>
+    </nav>
+  </div>
+
+  <div class="d-flex align-items-center gap-3">
+    <i class="bi bi-bell"></i>
+    <i class="bi bi-envelope"></i>
+    <div class="position-relative">
+      <img src="assets/avatar.png" alt="User" class="rounded-circle" width="36" height="36" />
+      <span class="status-dot bg-success"></span>
+    </div>
+  </div>
+</header>
+
+
+
+
+<!-- <header class="app-header d-flex align-items-center justify-content-between px-3 py-2 border-bottom bg-white shadow-sm">
+
+
+  <div class="d-flex align-items-center gap-3">
+    <button class="btn btn-link text-dark fs-4" (click)="onToggleSidebar()" aria-label="Toggle sidebar">
+      <i class="bi bi-list"></i>
+    </button>
+
+    <nav class="nav">
+      <a class="nav-link px-2 text-dark fw-semibold" routerLink="/dashboard">Dashboard</a>
+      <a class="nav-link px-2 text-dark" routerLink="/users">Users</a>
+      <a class="nav-link px-2 text-dark" routerLink="/settings">Settings</a>
+    </nav>
+  </div>
+
+
+  <div class="d-flex align-items-center gap-3">
+
+
+    <button class="btn btn-link text-dark position-relative">
+      <i class="bi bi-bell fs-5"></i>
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+    </button>
+
+    <button class="btn btn-link text-dark">
+      <i class="bi bi-envelope fs-5"></i>
+    </button>
+
+    <button class="btn btn-link text-dark">
+      <i class="bi bi-brightness-high fs-5"></i>
+    </button>
+
+
+    <div class="dropdown">
+      <a class="d-flex align-items-center text-decoration-none dropdown-toggle" href="#" data-bs-toggle="dropdown">
+        <div class="position-relative me-2">
+          <img src="assets/avatar.png" alt="User" class="rounded-circle" width="36" height="36" />
+          <span class="status-dot bg-success"></span>
+        </div>
+        <span class="fw-semibold text-dark">Admin</span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li><button class="dropdown-item" (click)="logout()">Logout</button></li>
+      </ul>
+    </div>
+  </div>
+</header> -->

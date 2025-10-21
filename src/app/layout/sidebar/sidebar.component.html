@@ -1,0 +1,16 @@
+<nav class="sidebar" [class.collapsed]="collapsed">
+  <div class="sidebar-brand py-3 text-center border-bottom">
+    <img src="assets/logo.png" height="30" alt="Logo" />
+    <span *ngIf="!collapsed" class="ms-2 fw-bold">Car Manager</span>
+  </div>
+
+  <ul class="nav flex-column mt-3">
+    <li *ngFor="let item of menu" class="nav-item">
+      <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="item.route">
+        <i class="bi me-2" [ngClass]="item.icon"></i>
+        <span *ngIf="!collapsed">{{ item.title }}</span>
+        <span *ngIf="item.badge && !collapsed" class="badge bg-primary ms-auto">{{ item.badge }}</span>
+      </a>
+    </li>
+  </ul>
+</nav>
