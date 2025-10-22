@@ -9,7 +9,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class DefaultHeaderComponent {
   @Input() sidebarOpen = true;            // nhận trạng thái sidebar (nếu có)
   @Output() toggleSidebar = new EventEmitter<void>(); // emit khi nhấn nút menu
-
+  title = "Dashboard";
   onToggleSidebar() {
     this.toggleSidebar.emit();
   }

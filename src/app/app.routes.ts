@@ -11,13 +11,13 @@ export const routes: Routes = [
                 redirectTo: 'dashboard',
                 pathMatch: 'full',
             },
-            // {
-            //     path: 'dashboard',
-            //     loadComponent: () =>
-            //         import('./pages/dashboard/dashboard.component').then(
-            //             m => m.DashboardComponent
-            //         ),
-            // },
+            {
+                path: 'dashboard',
+                loadComponent: () =>
+                    import('../components/dashbroard/dashboard.component').then(
+                        m => m.DashboardComponent
+                    ),
+            },
 
 
 

@@ -1,0 +1,13 @@
+.chart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 550px;
+  margin: 0 auto;
+}
+
+canvas {
+  max-width: 100%;
+  max-height: 100%;
+}

@@ -1,0 +1,28 @@
+<div class="container-fluid py-3">
+  <!-- Top Cards -->
+  <div class="row g-3 mb-4">
+    <div class="col-md-3" *ngFor="let card of cards">
+      <div class="card border-0 shadow-sm text-white" [ngStyle]="{'background-color': card.color}">
+        <div class="card-body">
+          <h5 class="card-title mb-1">{{card.value}}</h5>
+          <p class="mb-2 small opacity-75">{{card.label}}</p>
+          <canvas [id]="card.chartId" height="50"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="charts">
+    <div class="row g-3 mb-4">
+      <app-line-chart></app-line-chart>
+    </div>
+    <div class="row g-3 mb-4">
+      <app-bar-chart-component></app-bar-chart-component>
+
+    </div>
+    <div class="row g-3 mb-4">
+      <app-pie-chart-component></app-pie-chart-component>
+    </div>
+  </div>
+
+</div>
