@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="header">
+    <div>
+      <h4>Traffic</h4>
+      <small>Statistics by {{ currentView | titlecase }}</small>
+    </div>
+    <div class="btn-group">
+      <button class="btn" [class.active]="currentView === 'day'" (click)="changeView('day')">Day</button>
+      <button class="btn" [class.active]="currentView === 'month'" (click)="changeView('month')">Month</button>
+      <button class="btn" [class.active]="currentView === 'year'" (click)="changeView('year')">Year</button>
+    </div>
+  </div>
+
+  <div class="chart-container">
+    <canvas id="lineChartCanvas"></canvas>
+  </div>
+</div>

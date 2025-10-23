@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, AfterViewInit } from '@angular/core';
 import { Chart } from 'chart.js/auto';
-import { BarChartComponent } from '../bar-chart-component/bar-chart-component';
-import { PieChartComponent } from '../pie-chart-component/pie-chart-component';
-import { LineChartComponent } from "../line-chart-component/line-chart-component";
+import { BarChartComponent } from './bar-chart-component/bar-chart-component';
+import { PieChartComponent } from './pie-chart-component/pie-chart-component';
+import { LineChartComponent } from "./line-chart-component/line-chart-component";
 
 @Component({
   selector: 'app-dashboard',

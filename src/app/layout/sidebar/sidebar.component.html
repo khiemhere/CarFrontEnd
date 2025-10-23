@@ -6,7 +6,8 @@
 
   <ul class="nav flex-column mt-3">
     <li *ngFor="let item of menu" class="nav-item">
-      <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="item.route">
+      <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="item.route" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
         <i class="bi me-2" [ngClass]="item.icon"></i>
         <span *ngIf="!collapsed">{{ item.title }}</span>
         <span *ngIf="item.badge && !collapsed" class="badge bg-primary ms-auto">{{ item.badge }}</span>

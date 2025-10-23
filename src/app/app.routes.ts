@@ -18,6 +18,13 @@ export const routes: Routes = [
                         m => m.DashboardComponent
                     ),
             },
+            {
+                path: 'contract',
+                loadComponent: () =>
+                    import('../components/car-contract/car-contract.component').then(
+                        m => m.CarContractComponent
+                    ),
+            },
 
 
 

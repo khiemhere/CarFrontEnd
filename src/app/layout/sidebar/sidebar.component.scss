@@ -1,3 +1,39 @@
+// .sidebar {
+//   background-color: #1e1e2d;
+//   width: 240px;
+//   min-height: 100vh;
+//   transition: all 0.3s;
+//   color: #fff;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   transition: width 0.3s ease;
+//   overflow: hidden;
+//   z-index: 1000;
+// }
+
+// .nav-link {
+//   color: #bfc3c9;
+//   border-radius: 8px;
+//   margin: 4px 12px;
+//   position: relative;
+//   overflow: hidden;
+//   transition: all 0.3s;
+// }
+
+// .nav-link:hover {
+//   color: #fff;
+//   background-color: #2a2a3d;
+// }
+
+// .nav-link.active {
+//   background-color: #fff;
+//   color: #000;
+// }
+
+
+
+//1.
 .sidebar {
   width: 250px;
   height: 100vh;
@@ -9,40 +45,149 @@
   transition: width 0.3s ease;
   overflow: hidden;
   z-index: 1000;
-
-  &.collapsed {
-    width: 80px;
-
-    .nav-link span,
-    .badge {
-      display: none;
-    }
-  }
-
-  .sidebar-brand {
-    img {
-      filter: brightness(0) invert(1);
-    }
-  }
-
-  .nav-link {
-    color: #ccc;
-    border-radius: 6px;
-    margin: 0 0.5rem;
-    transition: 0.2s;
-
-    &:hover {
-      background: rgba(255, 255, 255, 0.1);
-      color: #fff;
-    }
-
-    i {
-      font-size: 1.2rem;
-    }
-
-    .badge {
-      font-size: 0.6rem;
-      text-transform: uppercase;
-    }
-  }
 }
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+.sidebar-brand img {
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  color: #bfc3c9;
+  border-radius: 8px;
+  margin: 4px 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #2b2f47;
+  color: #fff;
+}
+
+/* Active trạng thái đẹp */
+.nav-link.active {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  overflow: visible;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+
+//2.
+/* 👇 Hiệu ứng bo ngược bên phải */
+// .nav-link.active::after {
+//   content: '';
+//   position: absolute;
+//   right: -1px;
+//   top: 0;
+//   width: 20px;
+//   height: 100%;
+//   background-color: #fff;
+//   border-top-left-radius: 16px;
+//   border-bottom-left-radius: 16px;
+// }
+
+/* 👇 Giả lập viền cong “ngược” ra ngoài */
+// .nav-link.active::before {
+//   content: '';
+//   position: absolute;
+//   right: -20px;
+//   top: 0;
+//   width: 20px;
+//   height: 100%;
+//   background-color: #f9fafb; /* màu nền của phần content */
+//   border-top-left-radius: 20px;
+//   border-bottom-left-radius: 20px;
+// }
+
+// .sidebar {
+//   width: 250px;
+//   height: 100vh;
+//   background-color: #1e1e2d;
+//   color: #fff;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   transition: width 0.3s ease;
+//   overflow: hidden;
+//   z-index: 1000;
+// }
+
+// .sidebar.collapsed {
+//   width: 70px;
+// }
+
+// .sidebar .nav-link {
+//   color: #cfd2d8;
+//   border-radius: 8px;
+//   margin: 4px 8px;
+//   transition: all 0.25s ease;
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   padding: 10px 14px;
+// }
+
+// .sidebar .nav-link:hover {
+//   background-color: #2b2f47;
+//   color: #fff;
+// }
+
+// /* ---- ACTIVE ITEM ---- */
+// .sidebar .nav-link.active {
+//   background-color: #fff;
+//   color: #000;
+//   font-weight: 600;
+//   border-top-left-radius: 12px;
+//   border-bottom-left-radius: 12px;
+//   margin-right: -16px;
+//   overflow: visible;
+//   position: relative;
+//   z-index: 2;
+// }
+
+// /* 👇 Tạo bo ngược thực sự bên phải */
+// .sidebar .nav-link.active::before,
+// .sidebar .nav-link.active::after {
+//   content: '';
+//   position: absolute;
+//   right: -1px;
+//   width: 32px;
+//   height: 32px;
+//   background-color: transparent;
+//   z-index: 1;
+// }
+
+// .sidebar .nav-link.active::before {
+//   top: -35px;
+//   border-bottom-right-radius: 35px;
+//   box-shadow: 0 16px 0 0 #fff; /* màu content */
+// }
+
+// .sidebar .nav-link.active::after {
+//   bottom: -32px;
+//   border-top-right-radius: 32px;
+//   box-shadow: 0 -16px 0 0 #fff; /* màu content */
+// }
+
+// /* 👇 Tạo cảm giác lõm ra ngoài */
+// .sidebar .nav-link.active::after,
+// .sidebar .nav-link.active::before {
+//   clip-path: inset(0 -16px 0 0);
+// }
+
+// .sidebar .nav-link.active i {
+//   color: #1e1e2d;
+// }
+
