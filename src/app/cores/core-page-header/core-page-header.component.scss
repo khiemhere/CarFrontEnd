@@ -1,0 +1,22 @@
+.core-page-header {
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:8px 12px; background:#fff; border-bottom:1px solid #e5e7eb;
+
+  .left {
+    .title{ margin:0; font-size:18px; font-weight:600; letter-spacing:.02em; text-transform:uppercase; }
+    .subtitle{ font-size:13px; color:#6b7280; }
+  }
+
+  .right{
+    display:flex; align-items:center; gap:8px;
+    .fab{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:30px; height:30px; border-radius:50%; border:0;
+      background:#f97316; color:#fff; box-shadow:0 2px 6px rgba(249,115,22,.35);
+      transition:transform .1s ease, filter .2s ease;
+      i{ font-size:16px; }
+      &:hover{ filter:brightness(1.05); }
+      &:active{ transform:translateY(1px) scale(.98); }
+    }
+  }
+}

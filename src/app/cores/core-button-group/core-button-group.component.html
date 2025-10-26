@@ -1,0 +1,13 @@
+<div class="core-button-group">
+  <ng-container *ngFor="let btn of buttons; let i = index">
+    <span class="divider" *ngIf="btn.dividerBefore && i>0"></span>
+
+    <app-core-button-item
+      *ngIf="showAll || btn.visible !== false"
+      [data]="btn"
+      (buttonClick)="onButtonClick($event)">
+    </app-core-button-item>
+  </ng-container>
+
+  <span *ngIf="!buttons || buttons.length===0" class="debug-empty">(không có nút)</span>
+</div>

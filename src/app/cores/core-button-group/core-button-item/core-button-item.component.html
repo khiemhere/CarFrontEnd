@@ -1,0 +1,7 @@
+<div class="core-button-item"
+     [ngClass]="colorClass"
+     [class.disabled]="data?.disabled"
+     [attr.title]="data?.tooltip"
+     (click)="onClick()">
+  <i [class]="data?.iconClass"></i>
+</div>

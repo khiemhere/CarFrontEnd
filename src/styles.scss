@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+/* ============================
+   Custom Scrollbar Toàn Trang
+   ============================ */
+
+/* Áp dụng cho toàn bộ trình duyệt Webkit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;            /* Độ rộng của scrollbar */
+  height: 8px;           /* Chiều cao nếu là cuộn ngang */
+}
+
+/* Phần nền của thanh cuộn */
+::-webkit-scrollbar-track {
+  background: #1e1e2d;   /* Màu nền (giống sidebar hoặc theme) */
+  border-radius: 10px;
+}
+
+/* Phần thanh kéo */
+::-webkit-scrollbar-thumb {
+  background-color: #88888a; /* Màu tím hoặc màu brand */
+  border-radius: 10px;
+  border: 2px solid #e2e2e2; /* Viền cùng màu nền để có hiệu ứng "rãnh" */
+  transition: background-color 0.3s ease;
+}
+
+/* Khi hover vào thanh cuộn */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e2e2e2; /* Màu sáng hơn khi hover */
+}
+
+/* Firefox (tùy chọn) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #88888a #e2e2e2;
+}

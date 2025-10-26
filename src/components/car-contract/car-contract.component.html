@@ -1,15 +1,9 @@
 <div class="app-car-contract-container">
-    <app-core-header title="Quản lý xe" subtitle="Danh sách xe hiện có">
-        <div actions>
-            <button class="btn btn-primary btn-sm">
-                <i class="bi bi-plus-lg"></i> Thêm
-            </button>
-            <button class="btn btn-warning btn-sm">
-                <i class="bi bi-pencil-square"></i> Sửa
-            </button>
-            <button class="btn btn-danger btn-sm">
-                <i class="bi bi-trash"></i> Xóa
-            </button>
-        </div>
-    </app-core-header>
+    <app-core-page-header title= {{title}} [showAllButtons]="true"
+        (buttonClick)="onHeaderButtonClick($event)">
+    </app-core-page-header>
+
+    <div class="mt-3">
+        <!-- Nội dung trang -->
+    </div>
 </div>

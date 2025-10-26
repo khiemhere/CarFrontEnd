@@ -1,0 +1,16 @@
+<div class="core-page-header">
+  <div class="left">
+    <h2 class="title">{{ title }}</h2>
+    <small *ngIf="subtitle" class="subtitle text-muted">{{ subtitle }}</small>
+  </div>
+
+  <div class="right">
+     <app-core-button-group [buttons]="resolvedButtons" [showAll]="showAllButtons"
+        (buttonClick)="onChildButtonClick($event)">
+    </app-core-button-group>
+
+    <button *ngIf="showAdd" class="fab" type="button" title="Thêm mới" (click)="addClick.emit()">
+      <i class="bi bi-plus-lg"></i>
+    </button>
+  </div>
+</div>
